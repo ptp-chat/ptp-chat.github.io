@@ -1,6 +1,9 @@
 // out: main.css
 
-@import 'components/var'
+// Variables
+$open-sans = 'Open Sans', sans-serif
+$ptp-red = #ED706C
+$circle-width = 48px
 
 body, html
   margin 0
@@ -32,6 +35,7 @@ body
     text-align center
     box-sizing border-box
     padding-top 25px
+
     small
       display block
       font-size 12px
@@ -41,7 +45,6 @@ body
   padding 0 16px
 
 ol.rules
-  $circle-width = 48px
   padding 0
   counter-reset li // resets counter
 
@@ -84,6 +87,7 @@ ol.rules
 
 .logo
   display inline-block
+
   &.header
     width 200px
     height auto
