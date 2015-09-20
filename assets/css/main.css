@@ -1,10 +1,10 @@
 body,
 html {
   margin: 0;
-  padding: 0;
+  padding: 5px;
 }
 body {
-  max-width: 50%;
+  max-width: 750px;
   margin: auto;
   font-family: 'Open Sans', sans-serif;
 }
@@ -13,16 +13,26 @@ body {
 }
 .title h1 {
   font-weight: 300;
+  margin: 0;
 }
 .rules {
   padding: 0;
   list-style-type: none;
 }
 .rules li {
-  height: 55px;
-  line-height: 55px;
+  position: relative;
+  min-height: 42px;
+  padding: 10px 0;
+  line-height: 1.5;
+  overflow: auto;
 }
-.rules li span {
+.rules li.selected {
+  background-color: #f8e287;
+}
+.rules li .index {
+  position: absolute;
+  top: 10px;
+  left: 10px;
   background-color: #ed706c;
   color: #fff;
   padding: 6px 12px;
@@ -32,5 +42,21 @@ body {
   line-height: 30px;
   text-align: center;
   border-radius: 100%;
-  margin-right: 10px;
+}
+.rules li .content {
+  float: left;
+  padding-left: 66px;
+  margin-top: 9px;
+}
+.rules hr {
+  height: 1px;
+  width: 100%;
+  background-color: #fbdbda;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.logo.header {
+  width: 200px;
+  height: auto;
 }
