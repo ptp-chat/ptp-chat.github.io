@@ -1,6 +1,27 @@
+@import 'components/var'
+
 body, html
   margin 0
   padding 0
 body
   max-width 50%
   margin auto
+  font-family $open-sans
+
+.title
+  border-bottom 2px solid $ptp-red
+  h1
+    font-weight 300
+
+.rules
+  padding 0
+  list-style-type none
+  li
+    height 45px
+    line-height @height
+    span
+      background-color $ptp-red
+      color #fff
+      padding 8px 14px
+      border-radius 100%
+      margin-right 10px

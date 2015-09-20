@@ -6,4 +6,26 @@ html {
 body {
   max-width: 50%;
   margin: auto;
+  font-family: 'Open Sans', sans-serif;
+}
+.title {
+  border-bottom: 2px solid #ed706c;
+}
+.title h1 {
+  font-weight: 300;
+}
+.rules {
+  padding: 0;
+  list-style-type: none;
+}
+.rules li {
+  height: 45px;
+  line-height: 45px;
+}
+.rules li span {
+  background-color: #ed706c;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 100%;
+  margin-right: 10px;
 }
