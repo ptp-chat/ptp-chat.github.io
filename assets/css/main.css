@@ -25,11 +25,11 @@ body {
 .rules li span {
   background-color: #ed706c;
   color: #fff;
-  padding: 8px 14px;
+  padding: 6px 12px;
   display: inline-block;
   min-width: 20px;
-  height: 28px;
-  line-height: 28px;
+  height: 30px;
+  line-height: 30px;
   text-align: center;
   border-radius: 100%;
   margin-right: 10px;
