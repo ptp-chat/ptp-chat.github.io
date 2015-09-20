@@ -19,7 +19,7 @@ body {
   font-weight: 300;
   margin: 0;
 }
-.title #join {
+.title .join {
   display: inline-block;
   background-color: #ed706c;
   width: 200px;
@@ -30,7 +30,7 @@ body {
   box-sizing: border-box;
   padding-top: 25px;
 }
-.title #join small {
+.title .join small {
   display: block;
   font-size: 12px;
   margin: 0;
