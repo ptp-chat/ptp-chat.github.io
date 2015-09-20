@@ -1,10 +1,13 @@
+// out: main.css
+
 @import 'components/var'
 
 body, html
   margin 0
-  padding 0
+  padding 5px
+
 body
-  max-width 50%
+  max-width 750px
   margin auto
   font-family $open-sans
 
@@ -12,14 +15,26 @@ body
   border-bottom 2px solid $ptp-red
   h1
     font-weight 300
+    margin 0
 
 .rules
   padding 0
   list-style-type none
   li
-    height 55px
-    line-height @height
-    span
+    position relative
+
+    min-height 42px
+    padding 10px 0
+    line-height 1.5
+    overflow auto
+
+    &.selected
+      background-color lighten(#f1c40f, 50%)
+
+    .index
+      position absolute
+      top 10px
+      left 10px
       background-color $ptp-red
       color #fff
       padding 6px 12px
@@ -29,4 +44,21 @@ body
       line-height @height
       text-align center
       border-radius 100%
-      margin-right 10px
+
+    .content
+      float left
+      padding-left 66px
+      margin-top 9px
+
+  hr
+    height 1px
+    width 100%
+    background-color lighten($ptp-red, 75%)
+    border 0
+    margin 0
+    padding 0
+
+.logo
+  &.header
+    width 200px
+    height auto
