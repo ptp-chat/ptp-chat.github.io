@@ -1,6 +1,5 @@
 (function($) {
   $(function() {
-
     var rules = $('.rules li'),
         rulesTotal = rules.length;
 
