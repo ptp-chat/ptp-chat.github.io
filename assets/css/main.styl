@@ -13,9 +13,26 @@ body
 
 .title
   border-bottom 2px solid $ptp-red
+  display flex
+  justify-content space-between
+  align-items center
   h1
     font-weight 300
     margin 0
+  #join
+    display inline-block
+    background-color $ptp-red
+    width 200px
+    height 90px
+    color #fff
+    text-decoration none
+    text-align center
+    box-sizing border-box
+    padding-top 25px
+    small
+      display block
+      font-size 12px 
+      margin 0 
 
 .description
   line-height 1.5
@@ -63,6 +80,7 @@ body
     padding 0
 
 .logo
+  display inline-block
   &.header
     width 200px
     height auto
