@@ -1,6 +1,9 @@
 // out: main.css
 
-@import 'components/var'
+// Variables
+$open-sans = 'Open Sans', sans-serif
+$ptp-red = #ED706C
+$circle-width = 48px
 
 body, html
   margin 0
@@ -8,6 +11,7 @@ body, html
 
 body
   max-width 750px
+  line-height 1.5
   margin auto
   font-family $open-sans
 
@@ -16,10 +20,12 @@ body
   display flex
   justify-content space-between
   align-items center
+
   h1
     font-weight 300
     margin 0
-  #join
+
+  .join
     display inline-block
     background-color $ptp-red
     width 200px
@@ -29,47 +35,47 @@ body
     text-align center
     box-sizing border-box
     padding-top 25px
+
     small
       display block
-      font-size 12px 
-      margin 0 
+      font-size 12px
+      margin 0
 
-.description
-  line-height 1.5
-  padding 0 10px
+.container
+  padding 0 16px
 
-.rules
+ol.rules
   padding 0
-  list-style-type none
-  li
-    position relative
+  counter-reset li // resets counter
 
-    min-height 42px
-    padding 10px 0
-    line-height 1.5
-    overflow auto
+  li
+    height $circle-width
+    position relative
+    list-style none
+    line-height @height
+    padding 8px
+    padding-left $circle-width + 8px
+    border-bottom solid 2px rgba($ptp-red, 50%)
+
+    &:last-child
+      border unset
+
+    &::before
+      content counter(li) // displays counter
+      counter-increment li // increments counter
+      display block
+      width $circle-width
+      height $circle-width
+      border-radius 50%
+      background-color $ptp-red
+      position absolute
+      left 0
+      text-align center
+      line-height @height
+      color #fff
 
     &.selected
       background-color lighten(#f1c40f, 50%)
-
-    .index
-      position absolute
-      top 10px
-      left 10px
-      background-color $ptp-red
-      color #fff
-      padding 6px 12px
-      display inline-block
-      min-width 20px
-      height 30px
-      line-height @height
-      text-align center
-      border-radius 100%
-
-    .content
-      float left
-      padding-left 66px
-      margin-top 9px
 
   hr
     height 1px
@@ -81,6 +87,7 @@ body
 
 .logo
   display inline-block
+
   &.header
     width 200px
     height auto

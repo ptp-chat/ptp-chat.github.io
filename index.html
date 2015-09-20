@@ -6,39 +6,18 @@
   <title>Programmers' Thinking Pub - PTP</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="assets/css/main.css">
-  <script>
-  window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
-
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
-
-  return t;
-  }(document, "script", "twitter-wjs"));
-  </script>
-  <script src="assets/js/jquery.js"></script>
-  <script src="assets/js/main.js"></script>
 </head>
 <body>
   <div class="title">
     <h1><img class='logo header' src='http://ptp.devjs.org/images/ptp_color_cropped.png'></h1>
-    <a href="join" id="join">Join PTP <small>Make sure to read the rules!</small></a>
+    <a href="join" class="join">Join PTP <small>Make sure to read the rules!</small></a>
   </div>
   <div class="container">
     <div class="description">
       <p><strong>PTP (Programmers' Thinking Pub)</strong> is a skype group dedicated to providing developers and programmers with a general chat to share their ideas, receive feedback on concepts or just chat about programming in general.</p>
       <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Join%20me%20in%20some%20programming%20discussion.%20ptp.devjs.org%20%23thinkingpub" data-size='large'>Tweet</a>
-
     </div>
-    <ul class="rules">
+    <ol class="rules">
       <li>No spamming</li>
       <li>Keep messages in english</li>
       <li>Keep the overall topic on development &amp; programming</li>
@@ -50,7 +29,8 @@
       <li>Do not judge another developer's programming capability</li>
       <li>Do not use any racial slurs, or derivitives of such</li>
       <li>Skype bots are subject to the same rules as normal members</li>
-    </ul>
+    </ol>
   </div>
+  <script src="assets/js/min/main-min.js"></script>
 </body>
 </html>
