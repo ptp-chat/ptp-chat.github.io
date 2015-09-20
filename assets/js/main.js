@@ -14,7 +14,7 @@
   });
 
   $(window).on('load hashchange', function(){
-    $('.selected').removeClass('.selected');
+    $('.selected').removeClass('selected');
     var selections = (window.location.hash).replace(/^[^0-9]/g, '').split(',');
     selections.forEach(function(rule){
       $('.rules li#' + rule).addClass('selected');
