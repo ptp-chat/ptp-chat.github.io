@@ -19,13 +19,18 @@ body {
   list-style-type: none;
 }
 .rules li {
-  height: 45px;
-  line-height: 45px;
+  height: 55px;
+  line-height: 55px;
 }
 .rules li span {
   background-color: #ed706c;
   color: #fff;
   padding: 8px 14px;
+  display: inline-block;
+  min-width: 20px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
   border-radius: 100%;
   margin-right: 10px;
 }
