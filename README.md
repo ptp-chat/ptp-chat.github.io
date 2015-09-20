@@ -1,1 +1,8 @@
-# ptp.devjs.org
+# [ptp.devjs.org](http://ptp.devjs.org/)
+A place for developers to chat and collaborate.
+
+## Contributing
+To fix something on the website, or add improvements.  Make a fork, add to your fork, then submit a PR.
+
+## Licensing
+This website, and any contributions made towards it, are licensed under MIT.  See the [LICENSE](LICENSE) file for more information about MIT.
