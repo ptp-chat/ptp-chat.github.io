@@ -14,7 +14,42 @@ body
   line-height 1.5
   margin auto
   font-family $open-sans
-
+  
+.main 
+    text-align center
+    height 100%
+    .motto, a
+        color $ptp-red
+        margin 25px 0px
+    a
+        text-decoration none
+        border-bottom 1px dotted $ptp-red
+    .join-form
+        input
+            box-sizing border-box
+            padding 4px 6px
+            width 370px; height 40px
+            border 1px solid rgba(#333, 0.2)
+            font-family $open-sans
+            &:focus
+                border none
+                outline 1px solid $ptp-red
+        button
+            box-sizing border-box
+            padding 4px 6px
+            height 40px
+            border none; outline none
+            background-color $ptp-red; color #fff
+            font-family $open-sans
+            cursor pointer
+            transition all 200ms
+            &:hover
+                background-color rgba($ptp-red, 0.6)
+    .footer
+        position fixed
+        left 0; right 0
+        bottom 15px
+        color rgba(#333, 0.6)
 .title
   border-bottom 2px solid $ptp-red
   display flex
@@ -91,3 +126,16 @@ ol.rules
   &.header
     width 200px
     height auto
+
+.-flex
+    display -webkit-box
+    display -webkit-flex
+    display flex
+    
+.-direction-column
+    flex-direction column
+    
+.-flex-center
+    justify-content center
+    align-items center
+    

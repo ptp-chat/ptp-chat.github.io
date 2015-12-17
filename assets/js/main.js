@@ -12,4 +12,27 @@
       });
     }
   });
+  $(function() {
+    $('.join-form').on('submit', function(e) {
+        e.preventDefault();
+
+        var email = $(this).find('input[name="email"]').val();
+        if(!email) return;
+
+        $.ajax({
+            url: 'http://imsean.me/ptp-invite/',
+            type: 'POST',
+            data: {
+                email: email
+            },
+            success: function(res) {
+                if(res.error) {
+                    alert(res.message);
+                } else {
+                    alert(res.message);
+                }
+            }
+        });
+    });
+  });
 })(jQuery);
