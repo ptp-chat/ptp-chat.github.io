@@ -27,9 +27,9 @@
             },
             success: function(res) {
                 if(res.error) {
-                    alert(res.message);
+                    $('.fields').hide().delay(1500).parent().find('#join_error').text(res.message).fadeIn(200);
                 } else {
-                    alert(res.message);
+                    $('.fields').hide().delay(1500).find('#join_success').fadeIn(200);
                 }
             }
         });

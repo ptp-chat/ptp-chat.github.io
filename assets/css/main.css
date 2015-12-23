@@ -9,6 +9,12 @@ body {
   margin: auto;
   font-family: 'Open Sans', sans-serif;
 }
+#join_success,
+#join_error {
+  margin-top: 25px;
+  color: #e5342f;
+  display: none;
+}
 .main {
   text-align: center;
   height: 100%;

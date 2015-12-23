@@ -14,8 +14,13 @@
         </div>
         <div class="motto">Come join PTP on <a href="https://slack.com/" target="_blank">Slack</a>!</div>
         <form class="join-form">
-            <input type="email" name="email" placeholder="Enter your slack email address">
-            <button type="submit">Request Invite</button>
+            <div class="fields">
+                <input type="email" name="email" placeholder="Enter your slack email address">
+                <button type="submit">Request Invite</button>
+            </div>
+
+            <div id="join_success">Great you've been invited, check your email for the invite (check spam too!).</div>
+            <div id="join_error"></div>
         </form>
         <div class="footer">
             Powered by DevJS
