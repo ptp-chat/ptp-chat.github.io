@@ -20,7 +20,7 @@
         if(!email) return;
 
         $.ajax({
-            url: 'http://imsean.me/ptp-invite/',
+            url: 'https://imsean.me/ptp-invite/',
             type: 'POST',
             data: {
                 email: email
