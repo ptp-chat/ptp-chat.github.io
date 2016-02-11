@@ -20,7 +20,7 @@
         if(!email) return;
 
         $.ajax({
-            url: 'http://imsean.me/ptp-invite/',
+            url: 'https://imsean.me/ptp-invite/',
             type: 'POST',
             data: {
                 email: email
@@ -29,7 +29,7 @@
                 if(res.error) {
                     $('.fields').hide().delay(1500).parent().find('#join_error').text(res.message).fadeIn(200);
                 } else {
-                    $('.fields').hide().delay(1500).find('#join_success').fadeIn(200);
+                    $('.fields').hide().delay(1500).parent().find('#join_success').fadeIn(200);
                 }
             }
         });
