@@ -1,4 +1,4 @@
-# [ptp.devjs.org](http://ptp.devjs.org/)
+# [ptp.github.io](http://ptp.github.io/)
 A place for developers to chat and collaborate.
 
 ## Contributing
